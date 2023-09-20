@@ -1,0 +1,56 @@
+
+.HomeGURUContainer {
+  height: 740px;
+  margin: 0 auto; /* Added "px" units to the margin values */
+  background-color: white; /* Use "url()" for background-image */
+  background-size: cover; /* Ensure the background image covers the container */
+  background-repeat: no-repeat; /* Prevent background image repetition */
+
+}
+
+.HomeGURUContent {
+  color: black; /* Take up remaining space */
+  font-size: 28px;
+}
+
+.space-intro{
+  padding-top: 10rem;
+  padding-left: 3rem;
+}
+
+
+.button{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  font-size: 20px;
+  font-family: 'DM Sans', sans-serif;
+
+  color: white;
+  background: #038E7F;
+
+  &:hover {
+    background: white;
+    border: 2px solid #038E7F;
+
+    font-size: 20px;
+    font-family: 'DM Sans', sans-serif;
+
+    color: #100F0D;
+  }
+
+  @media (max-width: 800px) {
+    background: transparent;
+
+    &:hover {
+      background: none;
+    }
+  }
+}
+
+.HomeGURUTitle {
+  font-size: 50px;
+  color: #100F0D; /* Adjust the margin-bottom as needed for spacing */
+}
