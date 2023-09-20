@@ -8,7 +8,7 @@ import Intro from "./components/intro";
 import About from "./components/about"; 
 import HomeGURU from "./components/homecontent"; 
 
-import MessengerCustomerChat from 'react-messenger-customer-chat';
+// import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 function App() {
   return (
@@ -37,10 +37,10 @@ function App() {
         </>} />
       </Routes>
 
-      <MessengerCustomerChat
+      {/* <MessengerCustomerChat
         pageId="2369383416447624"
         appId="320035067349586"
-      />
+      /> */}
 
       <Footer />
     </ThemeProvider>
