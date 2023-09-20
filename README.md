@@ -4,7 +4,7 @@
 
 ## Description
 
-Responsive Web - apllication by CPE KU80 (Kasetsart University Sriracha campus).
+Responsive Web - Application by CPE KU80 (Kasetsart University Sriracha campus).
 
 ## Table of Contents
 
@@ -18,13 +18,12 @@ Responsive Web - apllication by CPE KU80 (Kasetsart University Sriracha campus).
 
 Explain how to install your project and any dependencies it may have. Provide step-by-step instructions, if necessary.
 
-```bash
 # First nned to installation this command
 npm install react react-dom
 
 # And then Start project command
 npm start
 
-## contact
-CPE E.76 KUSRC collabrolate with "BAANISM"
 
+## Contact
+CPE E.76 KUSRC collabrolate with "BAANISM"
