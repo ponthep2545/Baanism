@@ -18,12 +18,13 @@ Responsive Web - Application by CPE KU80 (Kasetsart University Sriracha campus).
 
 Explain how to install your project and any dependencies it may have. Provide step-by-step instructions, if necessary.
 
-# First nned to installation this command
+```bash
+# First, you need to install these dependencies
 npm install react react-dom
 
-# And then Start project command
+# Then, start the project using the following command
 npm start
-
+```
 
 ## Contact
 CPE E.76 KUSRC collabrolate with "BAANISM"
