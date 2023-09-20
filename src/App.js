@@ -8,6 +8,8 @@ import Intro from "./components/intro";
 import About from "./components/about"; 
 import HomeGURU from "./components/homecontent"; 
 
+import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -34,6 +36,11 @@ function App() {
           <HomeGURU />
         </>} />
       </Routes>
+
+      <MessengerCustomerChat
+        pageId="2369383416447624"
+        appId="320035067349586"
+      />
 
       <Footer />
     </ThemeProvider>
