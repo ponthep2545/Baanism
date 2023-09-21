@@ -5,7 +5,7 @@ function Intro() {
   return (
     <div className="AboutContainer">
       <div className="space-intro">
-      <p className="AboutContent">About</p>
+      <p className="AboutContent">About Content</p>
       </div>
       
     </div>

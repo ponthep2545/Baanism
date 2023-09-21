@@ -2,11 +2,11 @@ import { Routes, Route, Link } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./GlobalStyles";
 import { theme } from "./theme/theme";
-import Header from "./components/header";
-import Footer from "./components/footer";
-import Intro from "./components/intro";
-import About from "./components/about"; 
-import HomeGURU from "./components/homecontent"; 
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import Intro from "./components/intro/Intro";
+import About from "./components/about/About"; 
+import HomeGURU from "./components/homecontent/HomeGURU"; 
 
 import MessengerCustomerChat from './react-messenger-customer-chat';
 
