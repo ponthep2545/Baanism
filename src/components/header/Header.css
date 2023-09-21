@@ -5,7 +5,7 @@
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: nowrap;
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .headerLogo{
