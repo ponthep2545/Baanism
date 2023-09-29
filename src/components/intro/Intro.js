@@ -17,7 +17,7 @@ function Intro() {
 
         <br />
 
-        <button className="button">
+        <button className="Button">
           <Link to="/" >
               ประเมินราคา ฟรี
             </Link>

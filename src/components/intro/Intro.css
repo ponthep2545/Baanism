@@ -1,5 +1,3 @@
-
-
 .IntroContainer {
   height: 740px;
   margin: 0 auto; /* Added "px" units to the margin values */
@@ -20,36 +18,22 @@
 }
 
 
-.button{
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 
-  font-size: 20px;
-  font-family: 'DM Sans', sans-serif;
 
-  color: white;
-  background: #038E7F;
+.Button{
+  border: 3px solid #038E7F;
+  border-radius: 12px;
+  background-color: white;
 
-  &:hover {
-    background: white;
-    border: 2px solid #038E7F;
+  font-size: 15px;
+  font-family: 'Prompt', sans-serif;
+  color: #100F0D;
 
-    font-size: 20px;
-    font-family: 'DM Sans', sans-serif;
-
-    color: #100F0D;
-  }
-
-  @media (max-width: 800px) {
-    background: transparent;
-
-    &:hover {
-      background: none;
-    }
-  }
+  width: 150px;
+  height: 40px;
 }
+  
+  
 
 .IntroTitle {
   font-size: 50px;
