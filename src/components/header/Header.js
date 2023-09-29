@@ -34,12 +34,20 @@ export default function Header(){
         </Link>
       </div>
       <div className='headerButton'>
+<<<<<<< HEAD
         <Link to = "/user-profile">
+=======
+        <Link>
+>>>>>>> b8365f329fa42fd5a9353cebfe0e2abd12894fd3
           <button className='lineButton' >
             ลงชื่อเข้าใช้งาน
           </button>
         </Link>
+<<<<<<< HEAD
         <Link to =  "/admin-profile">
+=======
+        <Link>
+>>>>>>> b8365f329fa42fd5a9353cebfe0e2abd12894fd3
           <button className='solidButton'>
             ลงทะเบียน
           </button>
@@ -147,4 +155,8 @@ export default function Header(){
 //       </div>
 //     </nav>
 //   );
+<<<<<<< HEAD
 // }
+=======
+// }
+>>>>>>> b8365f329fa42fd5a9353cebfe0e2abd12894fd3
