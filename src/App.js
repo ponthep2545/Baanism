@@ -7,7 +7,6 @@ import Footer from "./components/footer/Footer";
 import Intro from "./components/intro/Intro";
 import About from "./components/about/About"; 
 import HomeGURU from "./components/homecontent/HomeGURU"; 
-import navBar from "./components/navbar/navBar";
 import MessengerCustomerChat from './react-messenger-customer-chat';
 
 function App() {
@@ -15,25 +14,20 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Header />
-      <navBar />
-
       <Routes>
-
         {/* Default route */}
         <Route path="/" element={<>
           <Intro />
           <About />
           <HomeGURU />
         </>} />
-        
         {/* About's route */}
         <Route path="/about" element={<>
           <About />
           <HomeGURU />
         </>} />
-
-             {/* Home's route */}
-             <Route path="/homecontent" element={<>
+        {/* Home's route */}
+        <Route path="/homecontent" element={<>
           <HomeGURU />
         </>} />
       </Routes>
