@@ -1,8 +1,19 @@
 import logo from './../../assets/images/logo-header.png';
 import './Header.css'
-import { Link } from 'react-router-dom';
+import { Link, Routes, Route, useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react'; // Import the React library
 
 export default function Header(){
+  const navigate = useNavigate();
+  
+  const btnRegister = () => {
+    navigate('/register');
+  }
+
+  const btnLogin = () => {
+    navigate('/login');
+  }
+  
   return(
     <>
       <nav>
@@ -33,12 +44,12 @@ export default function Header(){
               </Link>
             </li>
             <li>
-              <button className='lineButton' >
+              <button className='lineButton' onClick={btnLogin} >
                 ลงชื่อเข้าใช้งาน
               </button>
             </li>
             <li>
-              <button className='solidButton'>
+              <button className='solidButton' onClick={btnRegister} >
                 ลงทะเบียน
               </button>
             </li>

@@ -8,6 +8,8 @@ import Intro from "./components/intro/Intro";
 import About from "./components/about/About"; 
 import HomeGURU from "./components/homecontent/HomeGURU"; 
 import MessengerCustomerChat from './react-messenger-customer-chat';
+import Register from "./components/register/Register";
+import Login from "./components/login/Login";
 
 function App() {
   return (
@@ -30,6 +32,12 @@ function App() {
         <Route path="/homecontent" element={<>
           <HomeGURU />
         </>} />
+        {/* register's route */}
+        <Route path="/register" element={<>
+          <Register/>
+        </>}/>
+        {/* login's route */}
+        <Route path="/login" element={<><Login/></>}/>
       </Routes>
 
       <MessengerCustomerChat
