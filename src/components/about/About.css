@@ -13,40 +13,7 @@
   padding-left: 100px;
 }
 
-.content-container1{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border: 0px;
-  border-color: black;
-  border-style: solid;
-  width: 90%;
-  height: 60%;
-}
-
-.content-container2{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border: 0px;
-  border-color: black;
-  border-style: solid;
-  width: 90%;
-  height: 60%;
-}
-
-.content-container3{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border: 0px;
-  border-color: black;
-  border-style: solid;
-  width: 90%;
-  height: 60%;
-}
-
-.content-container4{
+.content-container{
   display: flex;
   justify-content: space-around;
   align-items: center;
