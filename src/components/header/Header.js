@@ -63,7 +63,7 @@ export default function Header() {
             ลงชื่อเข้าใช้งาน
           </button>
         </Link>
-        <Link to ="register">
+        <Link to="/register">
           <button className='solidButton'>
             ลงทะเบียน
           </button>
