@@ -1,5 +1,5 @@
 .logoStyle{
-  width: 230px;
+  width: 252px;
   height: 60px; 
 }
 
@@ -7,7 +7,7 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #03128E;
+  background-color: #fff;
   height: 60px;
   padding-right: 50px;
 }
@@ -28,11 +28,11 @@ nav{
   text-decoration: none;
   font-size: 1.3rem;
   /* font-weight: 600; */
-  color: white;
+  color: 100F0D;
 }
 
 .navBar li a:hover{
-  color: #fff;
+  color: #100F0D;
 }
 
 .navBar li a:hover::after{
@@ -48,11 +48,11 @@ nav{
 .lineButton{
   border: 3px solid #038E7F;
   border-radius: 12px;
-  background-color: #03128E;
+  background-color: #fff;
 
   font-size: 1.3rem;
   font-family: 'DM Sans', sans-serif;
-  color: #fff;
+  color: #100F0D;
 
   width: 180px;
   height: 40px;
@@ -61,9 +61,9 @@ nav{
 .lineButton:hover{
   border: 3px solid #038E7F;
   border-radius: 12px;
-  background-color: #03128E;
+  background-color: #fff;
 
-  color: #fff;
+  color: #100F0D;
 }
 
 .solidButton{
@@ -92,7 +92,7 @@ nav{
   justify-content: space-between;
   align-items: center; */
   padding: 1rem 2rem;
-  /* background-color: #03128E;
+  /* background-color: #fff;
   color: #fff; */
 }
 
@@ -106,7 +106,7 @@ nav{
   width: 25px;
   height: 3px;
   margin: 3px 0;
-  background-color: #fff;
+  background-color: #03128E;
   transition: 0.4s;
 }
 
@@ -119,9 +119,9 @@ nav{
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 55px;
+  top: 60px;
   right: 0;
-  background-color: #03128E;
+  background-color: #f1f1f1;
   width: 50%;
   height: 100vh;
   z-index: 1;
@@ -133,18 +133,26 @@ nav{
 }
 
 .nav-links.open li a:hover{
-  color: #fff;
+  color: #100F0D;
 }
 
 .nav-links.open li a:hover::after{
   content: "";
   width: 50%;
   height: 2.5px;
-  background-color: #fff;
+  background-color: #100F0D;
   position: absolute;
   bottom: 10px;
   right: 0;
   left: 25%;
+}
+
+.nav-links.open .lineButton{
+  background-color: #f1f1f1;
+}
+
+.nav-links.open .lineButton:hover{
+  background-color: #f1f1f1;
 }
 
 @media screen and (max-width: 768px) {
