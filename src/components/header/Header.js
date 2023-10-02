@@ -41,7 +41,7 @@ export default function Header() {
   return (
     <nav className='navBarContainer'>
       <Link to="/">
-        <img src={logo} alt="baanism-logo" className="headerLogo"/>
+        <img src={logo} alt="baanism-logo" className="logoStyle"/>
       </Link>
       <div className='headerMenu'>
         <Link to="/about">
