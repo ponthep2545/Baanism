@@ -1,8 +1,10 @@
 import React from "react";
 import "./About.css"; // Import the CSS file for this component
+import Gallery from "./Gallery";
 
 function Intro() {
   return (
+    <>
     <div className="AboutContainer">
 
       <div className="content-container">
@@ -66,8 +68,9 @@ function Intro() {
 ความเสียหายของงานก่อสร้าง</p>
         </div>
       </div>
-
     </div>
+    <Gallery />
+    </>
   );
 }
 
