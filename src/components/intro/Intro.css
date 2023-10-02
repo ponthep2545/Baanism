@@ -1,17 +1,24 @@
 
 
+.IntroTitle {
+  font-size: 75px;
+  color: #100F0D; /* Adjust the margin-bottom as needed for spacing */
+  font-family: 'Prompt',sans-serif;
+}
+
 .IntroContainer {
-  height: 740px;
+  height: 1000px;
   margin: 0 auto; /* Added "px" units to the margin values */
   background-image: url("../../assets/images/bg-landing.png"); /* Use "url()" for background-image */
   background-size: cover; /* Ensure the background image covers the container */
   background-repeat: no-repeat; /* Prevent background image repetition */
-
+  background-position: center;
 }
 
 .IntroContent {
   color: black; /* Take up remaining space */
-  font-size: 28px;
+  font-size: 42px;
+  font-family: 'Prompt',sans-serif;
 }
 
 .space-intro{
@@ -20,15 +27,17 @@
 }
 
 
-.button{
+.free_estimate{
+  margin-top: 3%;
+  width: 350px;
+  height: 70px;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 
-  font-size: 20px;
-  font-family: 'DM Sans', sans-serif;
-
+  font-size: 30px;
+  font-family: 'Prompt',sans-serif;
   color: white;
   background: #038E7F;
 
@@ -36,8 +45,8 @@
     background: white;
     border: 2px solid #038E7F;
 
-    font-size: 20px;
-    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+    font-family: 'Prompt',sans-serif;
 
     color: #100F0D;
   }
@@ -51,7 +60,3 @@
   }
 }
 
-.IntroTitle {
-  font-size: 50px;
-  color: #100F0D; /* Adjust the margin-bottom as needed for spacing */
-}

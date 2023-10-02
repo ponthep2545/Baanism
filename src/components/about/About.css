@@ -1,53 +1,137 @@
 
 .AboutContainer {
-  height: 740px;
+  height: 1150px;
   margin: 0 auto; /* Added "px" units to the margin values */
-  background-color: white; /* Use "url()" for background-image */
-  background-size: cover; /* Ensure the background image covers the container */
   background-repeat: no-repeat; /* Prevent background image repetition */
+  background: url("../../assets/images/blue\ gradiant-topleft.png"), rgb(255, 255, 255);
+  /* background-position: 0% 0%; */
+  background-size: cover;
+  display: grid ;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  padding-top: 125px;
+  padding-left: 100px;
+}
+
+.content-container1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 0px;
+  border-color: black;
+  border-style: solid;
+  width: 90%;
+  height: 60%;
+}
+
+.content-container2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 0px;
+  border-color: black;
+  border-style: solid;
+  width: 90%;
+  height: 60%;
+}
+
+.content-container3{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 0px;
+  border-color: black;
+  border-style: solid;
+  width: 90%;
+  height: 60%;
+}
+
+.content-container4{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 0px;
+  border-color: black;
+  border-style: solid;
+  width: 90%;
+  height: 60%;
+}
+
+.content-container-large{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 0px;
+  border-color: black;
+  border-radius: 45px;
+  border-style: solid;
+  width: 90%;
+  height: 60%;
+  grid-column: 1/3;
+  background: linear-gradient(to right,#000000,#3533cd);
+  animation-timing-function: ease-in-out;
+}
+
+.contentbox1{
+  border: 0px;
+  border-color: black;
+  border-style: solid;
+  width: 100px;
+  height: 100px;
+  animation-timing-function: ease-in-out;
 
 }
 
-.AboutContent {
-  color: black; /* Take up remaining space */
-  font-size: 28px;
+.contentbox2{
+  border: 0px;
+  border-color: black;
+  border-style: solid;
+  width: 600px;
+  height: 100px;
 }
 
-.space-intro{
-  padding-top: 10rem;
-  padding-left: 3rem;
+.contentbox1-large{
+  border: 0px;
+  border-color: black;
+  border-style: solid;
+  width: 308px;
+  height: 302px;
 }
 
+.contentbox2-large{
+  border: 0px;
+  border-color: black;
+  border-style: solid;
+  width: 1100px;
+  height: 150px;
+}
 
-.button{
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+h2{
+  font-family: 'Prompt',sans-serif;
+  font-size: 32px;
+}
 
-  font-size: 20px;
-  font-family: 'DM Sans', sans-serif;
+.contentbox2 p{
+  font-family: 'Prompt',sans-serif;
+  font-size: 24px;
+  color: #000000;
+}
+.contentbox2-large p{
+  font-family: 'Prompt',sans-serif;
+  font-size: 26px;
+  color: #ffffff;
+}
 
-  color: white;
-  background: #038E7F;
+.icon{
+  width: 115px;
+  height: 125px;
+  object-fit: contain;
+}
 
-  &:hover {
-    background: white;
-    border: 2px solid #038E7F;
-
-    font-size: 20px;
-    font-family: 'DM Sans', sans-serif;
-
-    color: #100F0D;
-  }
-
-  @media (max-width: 800px) {
-    background: transparent;
-
-    &:hover {
-      background: none;
-    }
-  }
+.icon-large{
+  width: 308px;
+  height: 302px;
+  object-fit: contain;
 }
 
 .AboutTitle {

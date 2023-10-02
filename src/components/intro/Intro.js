@@ -17,12 +17,11 @@ function Intro() {
 
         <br />
 
-        <button className="button">
+        <button className="free_estimate">
           <Link to="/" >
               ประเมินราคา ฟรี
             </Link>
         </button>
-     
       </div>
     </div>
   );

@@ -39,53 +39,136 @@ export default function Header() {
   }, []);
 
   return (
-    <>
-      <nav className={`navbar ${isNavOpen ? 'active' : ''}`}>
-        <Link to="/">
-          <img src={logo} alt="baanism-logo" className="logoStyle" />
+    <nav className='navBarContainer'>
+      <Link to="/">
+        <img src={logo} alt="baanism-logo" className="headerLogo"/>
+      </Link>
+      <div className='headerMenu'>
+        <Link to="/about">
+          เกี่ยวกับเรา
         </Link>
-
-        <div className="nav-toggle" onClick={toggleNav}>
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </div>
-
-        <div className={`nav-links ${isNavOpen ? 'open' : ''}`}>
-          <ul className='navBar'>
-            <li>
-              <Link to="/about">
-                เกี่ยวกับเรา
-              </Link>
-            </li>
-            <li>
-              <Link to='/homecontent'>
-                Home GURU Content
-              </Link>
-            </li>
-            <li>
-              <Link to='/'>
-                ประเมินราคา
-              </Link>
-            </li>
-            <li>
-              <Link to='/'>
-                ติดต่อเรา
-              </Link>
-            </li>
-            <li>
-              <button className='lineButton' onClick={btnLogin} >
-                ลงชื่อเข้าใช้งาน
-              </button>
-            </li>
-            <li>
-              <button className='solidButton' onClick={btnRegister} >
-                ลงทะเบียน
-              </button>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </>
+        <Link to="/homecontent" className="space">
+          Home GURU Content
+        </Link>
+        <Link to="/contact" className="space">
+          ประเมินราคา
+        </Link>
+        <Link to="/contact" className="space">
+          ติดต่อเรา
+        </Link>
+      </div>
+      <div className='headerButton'>
+        <Link>
+          <button className='lineButton' >
+            ลงชื่อเข้าใช้งาน
+          </button>
+        </Link>
+        <Link>
+          <button className='solidButton'>
+            ลงทะเบียน
+          </button>
+        </Link>
+      </div>
+    </nav>
   );
 }
+
+// export default function Header() {
+//   const [navToggle, setNavToggle] = useState(false);
+
+//   const alternar = () => {
+//     setNavToggle(!navToggle);
+//   };
+
+//   useEffect(() => {
+//     if (navToggle === true) {
+//       document.body.style.overflow = 'hidden';
+//     } else {
+//       document.body.style.overflow = 'auto';
+//     }
+//   }, [navToggle]);
+
+//   return (
+//     <nav className="Container">
+//       <Link to="/">
+//         <img src={logo} alt="logo" className="Logo-header" />
+//       </Link>
+//       <div className={`MobileNav ${navToggle ? 'open' : ''}`}>
+//         <button onClick={alternar}>
+//           {navToggle ? (
+//             <i>
+//               <img src={Close} alt="Fechar" />
+//             </i>
+//           ) : (
+//             <i>
+//               <img src={Hamburger} alt="abrir" />
+//             </i>
+//           )}
+//         </button>
+//       </div>
+//       <div className={`header-container ${navToggle ? 'open' : ''}`}>
+//         <div className='header-menu'>
+//             <Link to="/about" >
+//               เกี่ยวกับเรา
+//             </Link>
+//             <Link to="/homecontent" className="space">
+//               Home GURU Content
+//           </Link>
+//           <Link to="/contact" className="space">
+//             ประเมินราคา
+//           </Link>
+//           <Link to="/contact" className="space">
+//             ติดต่อเรา
+//           </Link>
+//           <Link to="/login">
+//             <button className="login-button">
+//               ลงชื่อเข้าใช้งาน
+//             </button>
+//           </Link>
+//           <Link to="/login">
+//             <button className="register-button">
+//               ลงทะเบียน
+//             </button>
+//           </Link>
+//           {/* <button className="login-button">
+//               <Link to="/login"  >
+//                 ลงชื่อเข้าใช้งาน
+//               </Link>
+//             </button>
+          
+//             <button className="register-button">
+//               <Link to="/login" >
+//                 ลงทะเบียน
+//               </Link>
+//             </button> */}
+//         </div>
+
+//         {/* <div className="header-grap">
+//           <Link to="/about" className="space">
+//             เกี่ยวกับเรา
+//           </Link>
+//           <Link to="/homecontent" className="space">
+//             Home GURU Content
+//           </Link>
+//           <Link to="/contact" className="space">
+//             ประเมินราคา
+//           </Link>
+//           <Link to="/contact" className="space">
+//             ติดต่อเรา
+//           </Link>
+//           <button className="login-button">
+//             <Link to="/login"  >
+//               ลงชื่อเข้าใช้งาน
+//             </Link>
+//           </button>
+        
+//           <button className="register-button">
+//             <Link to="/login" >
+//               ลงทะเบียน
+//             </Link>
+//           </button>
+//         </div> */}
+//       </div>
+//     </nav>
+//   );
+// }

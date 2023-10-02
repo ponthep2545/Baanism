@@ -9,7 +9,7 @@
   left: 0;
   padding: 0;
   justify-content: space-between;
-  position: relative; /* Add this line */
+  /* position: relative; Add this line */
 }
 
 .footer-grap {
