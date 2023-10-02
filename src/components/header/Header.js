@@ -39,36 +39,53 @@ export default function Header() {
   }, []);
 
   return (
-    <nav className='navBarContainer'>
-      <Link to="/">
-        <img src={logo} alt="baanism-logo" className="logoStyle"/>
-      </Link>
-      <div className='headerMenu'>
-        <Link to="/about">
-          เกี่ยวกับเรา
+    <>
+      <nav className={`navbar ${isNavOpen ? 'active' : ''}`}>
+        <Link to="/">
+          <img src={logo} alt="baanism-logo" className="logoStyle" />
         </Link>
-        <Link to="/homecontent" className="space">
-          Home GURU Content
-        </Link>
-        <Link to="/contact" className="space">
-          ประเมินราคา
-        </Link>
-        <Link to="/contact" className="space">
-          ติดต่อเรา
-        </Link>
-      </div>
-      <div className='headerButton'>
-        <Link>
-          <button className='lineButton' >
-            ลงชื่อเข้าใช้งาน
-          </button>
-        </Link>
-        <Link>
-          <button className='solidButton'>
-            ลงทะเบียน
-          </button>
-        </Link>
-      </div>
-    </nav>
+
+        <div className="nav-toggle" onClick={toggleNav}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
+
+        <div className={`nav-links ${isNavOpen ? 'open' : ''}`}>
+          <ul className='navBar'>
+            <li>
+              <Link to="/about">
+                เกี่ยวกับเรา
+              </Link>
+            </li>
+            <li>
+              <Link to='/homecontent'>
+                Home GURU Content
+              </Link>
+            </li>
+            <li>
+              <Link to='/'>
+                ประเมินราคา
+              </Link>
+            </li>
+            <li>
+              <Link to='/'>
+                ติดต่อเรา
+              </Link>
+            </li>
+            <li>
+              <button className='lineButton' onClick={btnLogin} >
+                ลงชื่อเข้าใช้งาน
+              </button>
+            </li>
+            <li>
+              <button className='solidButton' onClick={btnRegister} >
+                ลงทะเบียน
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </>
   );
 }
