@@ -1,0 +1,22 @@
+.content-info {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  font-size: 18px;
+  font-family: 'prompt', sans-serif;
+  /* border: 1px solid black; */
+}
+
+.content-info img {
+  max-width: 80%;
+  width: 280px;
+  object-fit: cover;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.content-info p {
+  margin-top: 10px;
+  color: black;
+}
+
