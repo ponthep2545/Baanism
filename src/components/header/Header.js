@@ -58,12 +58,12 @@ export default function Header() {
         </Link>
       </div>
       <div className='headerButton'>
-        <Link>
+        <Link to="/login">
           <button className='lineButton' >
             ลงชื่อเข้าใช้งาน
           </button>
         </Link>
-        <Link>
+        <Link to ="register">
           <button className='solidButton'>
             ลงทะเบียน
           </button>
